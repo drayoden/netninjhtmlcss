@@ -1,0 +1,67 @@
+
+
+/* ------------
+p.success {
+    color: rgb(108, 145, 108);
+}
+
+.content {
+    background-color: silver;
+    padding: 20px;
+}
+--------- */ 
+
+/* note no space between 'div' and '.error' */
+/* targets a div with a class of 'error' */
+/* div.error {
+    color: red;
+} */
+
+/* note space between 'div'and '.error' */
+/* targets a div with a decendent with a class of 'error' */
+/* ------------
+
+div .error {
+    color: red
+}
+------------ */
+
+
+/* select and anchor with an attribute */
+/* ------------
+
+a[href] {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+}
+------------ */
+
+/* other attribute selectors */
+
+/*  a[href*="google"]  - contains */
+/*  a[href="https://google.com"]  - is equal to */
+/*  a[href$=".com"]  - ends with */
+
+/* ----------------------------------- inheritance -------------------------------------------------- */
+div {
+    color: blue;                      /* inherited by all p tags */
+    border: 1px solid blueviolet;           /* not inherited by all p tags, only the div gets the border */
+    margin: 40px;                             /* not inherited by all p tags, only the div gets the margin */
+    font-weight: bolder;                      /* inherited by all p tags */
+}
+
+
+/* force the inheritance of border and margin from above */
+div p {
+    border: inherit;
+    margin: inherit; 
+    color: crimson;   /* overrride the color from above - 'more specific' (specificity) */
+}
+
+/* this only works on p tags not inside a div */
+/* the previous selector; 'div p' is more 'specific' (higher specificity) than just 'p' */
+p {
+    color: purple;
+}
