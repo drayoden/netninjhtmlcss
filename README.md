@@ -16,3 +16,8 @@
     * fixed - realative to the viewport - fixed navbar
     * absolute - positioned relative to parent element where the parent also has position. original space is not retained.
     * sticky - mix of static and fixed. 
+* pseudo classes
+    * style elements when in a specific state: :hover, :focus, :first-child, etc.
+* pseudo elements
+    * ::after, ::before, ::first-letter, ::first-line, ::selection
+
