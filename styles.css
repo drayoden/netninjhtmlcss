@@ -154,7 +154,7 @@ nav li:first-child a {
     color: #f63232;
 }
 
-/* pseudo elemnts */
+/* pseudo elements */
 
 article p::first-line {
     font-weight: bold;
@@ -174,4 +174,67 @@ p::after {
     content: '...';
 }
 
+/* media queries */
 
+/* for screens 1400px wide and below */ 
+@media screen and (max-width: 1400px) {
+    .banner .welcome h2 {
+        font-size: 42px;
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner .welcome h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    .banner .welcome h2 {
+        font-size: 25px;
+    }
+
+    .banner .welcome {
+        position: relative;         /* makes the welcome go below the banner */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .banner .welcome br {
+        display: none;
+    }
+
+    .banner .welcome span {
+        font-size: 1em;
+    }
+
+    .images li {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    nav li {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        top: 0;
+    }
+
+}

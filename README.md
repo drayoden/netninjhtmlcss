@@ -20,4 +20,7 @@
     * style elements when in a specific state: :hover, :focus, :first-child, etc.
 * pseudo elements
     * ::after, ::before, ::first-letter, ::first-line, ::selection
-
+* media queries for different device sizes
+* viewport meta tag; in the head of index.html -- add for a responsive site
+    * `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+* reponsive images
