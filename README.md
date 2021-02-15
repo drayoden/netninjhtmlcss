@@ -8,3 +8,4 @@
     * asid -- content related to somthing else; similar blogs
     * header -- contains the nav, title, etc.
     * footer -- contains (usually) site links, copywrite, contact info, social links, etc.
+* chrome dev tools
