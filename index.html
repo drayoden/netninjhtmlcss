@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML/CSS refresh</title>
+    <title>Forms</title>
 </head>
 <body>
-    <p>Hello moosetoes!</p>
-    <p>you are very <em>fuzzy!</em></p>
-    <a href="https://google.com" >The Goog</a>
 
-    <div>
-        <h1>Heading1</h1>
-        <h2>Heading2</h2>
-        <h3>Heading3</h3>
-        <h4>Heading4</h4>
-    </div>
+    <h1>HTML Forms</h1>
 
-    <ul>
-        <li>fuzzy</li>
-        <li>whiskers</li>
-        <li>fuzzybutt</li>
-    </ul>
 
-    <!-- span tag comment -->
+    <!-- not dealing with sending form to server in this series -->
+    <form>
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" placeholder="username...">
+        <br><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="email...">
+        <br><br>
+        <label for="password">password:</label>
+        <input type="password" name="password" placeholder="password">
 
-    <span>this is a <br> span tag with a break</span>
-    <hr>
+        <p>Select your age:</p>
+        <input type="radio" name="age" value="0-25" id="O1">
+        <label for="O1">0 - 25</label>
+        <input type="radio" name="age" value="26-50" id="O2">
+        <label for="O2">26 - 50</label>
+        <input type="radio" name="age" value="50+" id="O3">
+        <label for="O3">51+</label>
 
-    <img src="img/fuzzykitten.jpg" alt="img alt" style="height: 100px; width: 150px;">
+        <br><br>
 
-    <blockquote cite="https://www.lipsum.com/">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem porro beatae minima quidem sapiente rem nesciunt earum eligendi cupiditate veniam soluta, fugit nemo harum possimus. Libero consequuntur explicabo officia?
-    </blockquote>
+        <label for="">Security Questions:</label>
+        <select name="question" id="question"> 
+            <option value="q1">favorite tuna?</option> 
+            <option value="q2">whiskers or paws?</option>
+            <option value="q3">dog you know</option>
+            <option value="q4">squirrels you know?</option>
+            <option value="q5">stinky butt?</option>
+            <option value="q6">know how to poop?</option>
+            <option value="q7">soft ears?</option> 
+        </select>
+        <br><br>
+        <label for="answer">Security answer:</label>
+        <input type="text" id="answer" name="answer">
+        
+        <br><br>
 
-    <p style="color: orange;">style me ---</p>
+        <label for="bio">Your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="your bio..."></textarea>
+
+        <br><br>
+        <input type="submit" value="Go">
+
+    </form>
     
 </body>
 </html>
