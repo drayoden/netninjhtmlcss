@@ -1,0 +1,25 @@
+h1 {
+    color: orange;
+    background-color: slategray;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: slateblue; 
+    text-align: right;
+    line-height: 30px;
+    column-count: 3; 
+    column-gap: 20px;
+}
+
+ul {
+    border-bottom: 1px solid tomato;
+}
+
+li {
+    list-style-type: none;
+    text-shadow: 2px 2px rgb(209, 75, 13);
+}
