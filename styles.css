@@ -1,0 +1,16 @@
+span {
+    /* display: block; */
+    
+    /* inline block will allow for top and bottom margin to work better */
+    display: inline-block;
+    
+    margin: 20px;
+    padding: 20px;
+}
+
+div {
+    /* display: inline; */
+    border: 2px solid tomato;
+    margin: 20px;
+    padding: 20px;
+}
