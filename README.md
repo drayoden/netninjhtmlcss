@@ -9,3 +9,10 @@
     * header -- contains the nav, title, etc.
     * footer -- contains (usually) site links, copywrite, contact info, social links, etc.
 * chrome dev tools
+    * local file edit, create, etc. 
+* position/layout
+    * static - default, no specific position
+    * realtive - move relative to original position, original space is retained.
+    * fixed - realative to the viewport - fixed navbar
+    * absolute - positioned relative to parent element where the parent also has position. original space is not retained.
+    * sticky - mix of static and fixed. 
